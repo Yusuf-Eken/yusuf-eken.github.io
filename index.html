@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Eken - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <!-- Header (Hamburger Menülü) -->
+        <header class="card">
+            <div class="header-content">
+                <a href="#" class="logo">YE</a>
+                
+                <div class="header-actions">
+                    <!-- Tema Butonu -->
+                    <button id="theme-toggle" title="Temayı Değiştir">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+
+                    <!-- Menü Butonu (3 Çizgi) -->
+                    <button id="menu-toggle" aria-label="Menüyü Aç">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Açılır Menü -->
+            <nav id="nav-menu" class="nav-dropdown">
+                <a href="#about" class="nav-link">Hakkımda</a>
+                <a href="#experiences" class="nav-link">Deneyim</a>
+                <a href="#projects" class="nav-link">Projeler</a>
+                <a href="#technologies" class="nav-link">Yetenekler</a>
+                <a href="#contact" class="nav-link">İletişim</a>
+            </nav>
+        </header>
+
+        <!-- Ana İçerik -->
+        <main>
+            <!-- Hakkımda -->
+            <section id="about" class="card fade-in">
+                <div class="about-content">
+                    <div class="text-content">
+                        <div class="status-container">
+                            <div id="discord-status-badge" class="status-badge offline">
+                                <span class="status-dot"></span>
+                                <span>Çevrimdışı</span>
+                            </div>
+                            <div id="spotify-now-playing" style="display: none;">
+                                <i class="fab fa-spotify"></i>
+                                <span id="spotify-info"></span>
+                            </div>
+                        </div>
+                        
+                        <h1>Yusuf Eken</h1>
+                        <p class="subtitle">Software Developer</p>
+                        <p class="description">Karmaşık problemleri, kullanıcı odaklı ve ölçeklenebilir yazılım çözümlerine dönüştürmeye odaklanıyorum. Özellikle Flutter ile mobil uygulama geliştirme konusunda tutkuluyum ve kendimi sürekli olarak yeni teknolojiler öğrenmeye adadım.</p>
+                        <a href="#contact" class="cta-button">İletişime Geç</a>
+                    </div>
+                    <div class="profile-image-container">
+                        <!-- Profil resminiz -->
+                        <img src="bitmoji.jpg" alt="Yusuf Eken">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deneyim -->
+            <section id="experiences" class="card fade-in">
+                <h2 class="section-title">Deneyim</h2>
+                <ul>
+                    <li class="experience-item">
+                        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                            <h3>Stajyer - Node.js Web Service</h3>
+                            <span style="font-size: 0.9rem; opacity: 0.8;">05.06.2024 - 24.07.2024</span>
+                        </div>
+                        <p style="margin-bottom: 10px; font-weight: 500; margin-top: 5px;">Eskişehir Su ve Kanalizasyon İdaresi (ESKİ) - Genel Müdürlüğü</p>
+                        
+                        <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-color); font-size: 0.95rem; line-height: 1.6;">
+                            <li>Node.js ortamında çalışan web servislerinin geliştirilmesi süreçlerine katkı sağlandı.</li>
+                            <li>Veritabanı ile iletişim kuran HTTP istekleri (GET, POST) kurgulandı ve CRUD (Veri Ekleme/Okuma) işlemleri gerçekleştirildi.</li>
+                            <li>İstemci (Client) tarafına iletilen verilerin JSON formatında düzenlenmesi ve veri akışının optimizasyonu sağlandı.</li>
+                            <li>Geliştirilen API uç noktalarının (Endpoints) testleri yapılarak hatalar giderildi.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Projeler -->
+            <section id="projects" class="card fade-in">
+                <h2 class="section-title">Kişisel Projeler</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Proje 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Ehliyet Koçum</h3>
+                            <span class="status-badge idle">Yakında</span>
+                        </div>
+                        <p class="project-desc">Sürücü adayları için Flutter ile geliştirilen, sınav stresini azaltmayı hedefleyen interaktif simülasyon uygulaması.</p>
+                        <div class="project-techs">
+                            <span>Flutter</span><span>Provider/Bloc</span><span>JSON</span>
+                        </div>
+                    </div>
+
+                    <!-- Proje 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Celestia Astrology</h3>
+                            <span class="status-badge online">Geliştiriliyor</span>
+                        </div>
+                        <p class="project-desc">Doğum haritası ve burç yorumları sunan, RESTful API entegrasyonlu mobil uygulama.</p>
+                        <div class="project-techs">
+                            <span>Dart</span><span>REST API</span><span>Asenkron</span>
+                        </div>
+                    </div>
+
+                    <!-- Proje 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Codekeys</h3>
+                            <span class="status-badge offline">Arşivlendi</span>
+                        </div>
+                        <p class="project-desc">Kullanıcıların yazma hızını ölçen, Vanilla JS ile geliştirilmiş web platformu.</p>
+                        <div class="project-techs">
+                            <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Sosyal Medya & GitHub -->
+            <div class="grid-container">
+                <section id="socials" class="card fade-in">
+                    <h2 class="section-title">Sosyal Medya</h2>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/yusuf-eken-b8273b2b4/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/Yusuf-Eken" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </section>
+                <section id="github" class="card fade-in">
+                    <h2 class="section-title">GitHub Repositories</h2>
+                    <table class="repo-table">
+                        <tbody>
+                            <tr class="repo-placeholder-row"><td colspan="2">Repository'ler yükleniyor...</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <!-- Teknolojiler -->
+            <section id="technologies" class="card fade-in">
+                <h2 class="section-title">Yetenekler</h2>
+                
+                <!-- Grup 1: Diller & Framework -->
+                <div class="tech-category">
+                    <h3>Diller & Framework</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
+                        <div class="tech-item"><i class="devicon-dart-plain"></i><span>Dart</span></div>
+                        <div class="tech-item"><i class="devicon-csharp-plain"></i><span>C# (.NET)</span></div>
+                        <div class="tech-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                        <div class="tech-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
+                        <div class="tech-item"><i class="devicon-microsoftsqlserver-plain"></i><span>SQL</span></div>
+                        <div class="tech-item"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+                        <div class="tech-item"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+                    </div>
+                </div>
+
+                <!-- Grup 2: Araçlar -->
+                <div class="tech-category">
+                    <h3>Araçlar</h3>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+                        <div class="tech-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                        <div class="tech-item"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+                        <div class="tech-item"><i class="devicon-postman-plain"></i><span>Postman</span></div>
+                        <div class="tech-item"><i class="devicon-microsoftsqlserver-plain"></i><span>MS SQL Server</span></div>
+                    </div>
+                </div>
+
+                <!-- Grup 3: Yetkinlikler -->
+                <div class="tech-category">
+                    <h3>Yetkinlikler</h3>
+                    <div class="competency-list">
+                        <span class="competency-badge">REST API</span>
+                        <span class="competency-badge">OOP</span>
+                        <span class="competency-badge">Clean Code</span>
+                        <span class="competency-badge">UI Tasarımı</span>
+                        <span class="competency-badge">State Management</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- İletişim Formu -->
+            <section id="contact" class="card fade-in">
+                <h2 class="section-title">İletişim</h2>
+                <div class="contact-container">
+                    
+                    <!-- Sol Taraf: Bilgi -->
+                    <div class="contact-info">
+                        <h3>Birlikte Çalışalım</h3>
+                        <p>Projelerinizi hayata geçirmek veya tanışmak için formu doldurabilir ya da doğrudan e-posta gönderebilirsiniz.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>yusuffeken@gmail.com</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+90 552 563 26 02</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sağ Taraf: Form -->
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Mesajınız alınmıştır (Demo).');">
+                        <div class="form-group">
+                            <label for="name">İsim Soyisim</label>
+                            <input type="text" id="name" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" placeholder="ornek@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" rows="4" placeholder="Projenizden bahsedin..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button form-submit">Gönder <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+
+                </div>
+            </section>
+            
+            <footer style="text-align: center; margin-bottom: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                <p>&copy; 2026 Yusuf Eken. Tüm hakları saklıdır.</p>
+            </footer>
+        </main>
+        
+        <!-- Yukarı Çık Butonu -->
+        <button id="back-to-top" title="Yukarı Çık"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
