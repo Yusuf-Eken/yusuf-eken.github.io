@@ -44,12 +44,14 @@ header.scrolled {
 .logo { font-size: 1.5rem; font-weight: 700; color: var(--heading-color); text-decoration: none; }
 
 .header-actions { display: flex; align-items: center; gap: 0.8rem; }
-#theme-toggle, #menu-toggle { 
+#theme-toggle, #menu-toggle, #lang-toggle { 
     background: transparent; border: 2px solid var(--border-color); color: var(--text-color); 
     width: 40px; height: 40px; font-size: 1.2rem; border-radius: 12px; cursor: pointer; 
     display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; 
 }
-#theme-toggle:hover, #menu-toggle:hover { 
+#lang-toggle { font-size: 0.9rem; font-weight: 700; letter-spacing: 0.5px; }
+
+#theme-toggle:hover, #menu-toggle:hover, #lang-toggle:hover { 
     color: var(--primary-color); border-color: var(--primary-color); transform: scale(1.1); 
     background-color: var(--background-color);
 }
