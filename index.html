@@ -19,23 +19,25 @@
                 <a href="#" class="logo">YE</a>
                 
                 <div class="header-actions">
-                    <button id="theme-toggle" title="Temayı Değiştir">
+                    <button id="lang-toggle">TR</button>
+
+                    <button id="theme-toggle" title="Theme">
                         <i class="fa-solid fa-moon"></i>
                         <i class="fa-solid fa-sun"></i>
                     </button>
 
-                    <button id="menu-toggle" aria-label="Menüyü Aç">
+                    <button id="menu-toggle" aria-label="Menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
 
             <nav id="nav-menu" class="nav-dropdown">
-                <a href="#about" class="nav-link">Hakkımda</a>
-                <a href="#experiences" class="nav-link">Deneyim</a>
-                <a href="#projects" class="nav-link">Projeler</a>
-                <a href="#technologies" class="nav-link">Yetenekler</a>
-                <a href="#contact" class="nav-link">İletişim</a>
+                <a href="#about" class="nav-link" data-lang="nav_about">Hakkımda</a>
+                <a href="#experiences" class="nav-link" data-lang="nav_exp">Deneyim</a>
+                <a href="#projects" class="nav-link" data-lang="nav_projects">Projeler</a>
+                <a href="#technologies" class="nav-link" data-lang="nav_skills">Yetenekler</a>
+                <a href="#contact" class="nav-link" data-lang="nav_contact">İletişim</a>
             </nav>
         </header>
 
@@ -46,7 +48,7 @@
                         <div class="status-container">
                             <div id="discord-status-badge" class="status-badge offline">
                                 <span class="status-dot"></span>
-                                <span>Çevrimdışı</span>
+                                <span id="discord-text">Çevrimdışı</span>
                             </div>
                             <div id="spotify-now-playing" style="display: none;">
                                 <i class="fab fa-spotify"></i>
@@ -56,8 +58,8 @@
                         
                         <h1>Yusuf Eken</h1>
                         <p class="subtitle">Software Developer</p>
-                        <p class="description">Karmaşık problemleri, kullanıcı odaklı ve ölçeklenebilir yazılım çözümlerine dönüştürmeye odaklanıyorum. Özellikle Flutter ile mobil uygulama geliştirme konusunda tutkuluyum ve kendimi sürekli olarak yeni teknolojiler öğrenmeye adadım.</p>
-                        <a href="#contact" class="cta-button">İletişime Geç</a>
+                        <p class="description" data-lang="hero_desc">Karmaşık problemleri, kullanıcı odaklı ve ölçeklenebilir yazılım çözümlerine dönüştürmeye odaklanıyorum. Özellikle Flutter ile mobil uygulama geliştirme konusunda tutkuluyum ve kendimi sürekli olarak yeni teknolojiler öğrenmeye adadım.</p>
+                        <a href="#contact" class="cta-button" data-lang="hero_cta">İletişime Geç</a>
                     </div>
                     <div class="profile-image-container">
                         <img src="bitmoji.jpg" alt="Yusuf Eken">
@@ -66,35 +68,35 @@
             </section>
 
             <section id="experiences" class="card fade-in">
-                <h2 class="section-title">Deneyim</h2>
+                <h2 class="section-title" data-lang="section_exp">Deneyim</h2>
                 <ul>
                     <li class="experience-item">
                         <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-                            <h3>Stajyer - Node.js Web Service</h3>
+                            <h3 data-lang="exp_role">Stajyer - Node.js Web Service</h3>
                             <span style="font-size: 0.9rem; opacity: 0.8;">05.06.2024 - 24.07.2024</span>
                         </div>
-                        <p style="margin-bottom: 10px; font-weight: 500; margin-top: 5px;">Eskişehir Su ve Kanalizasyon İdaresi (ESKİ) - Genel Müdürlüğü</p>
+                        <p style="margin-bottom: 10px; font-weight: 500; margin-top: 5px;" data-lang="exp_company">Eskişehir Su ve Kanalizasyon İdaresi (ESKİ) - Genel Müdürlüğü</p>
                         
                         <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-color); font-size: 0.95rem; line-height: 1.6;">
-                            <li>Node.js ortamında çalışan web servislerinin geliştirilmesi süreçlerine katkı sağlandı.</li>
-                            <li>Veritabanı ile iletişim kuran HTTP istekleri (GET, POST) kurgulandı ve CRUD (Veri Ekleme/Okuma) işlemleri gerçekleştirildi.</li>
-                            <li>İstemci (Client) tarafına iletilen verilerin JSON formatında düzenlenmesi ve veri akışının optimizasyonu sağlandı.</li>
-                            <li>Geliştirilen API uç noktalarının (Endpoints) testleri yapılarak hatalar giderildi.</li>
+                            <li data-lang="exp_desc_1">Node.js ortamında çalışan web servislerinin geliştirilmesi süreçlerine katkı sağlandı.</li>
+                            <li data-lang="exp_desc_2">Veritabanı ile iletişim kuran HTTP istekleri (GET, POST) kurgulandı ve CRUD (Veri Ekleme/Okuma) işlemleri gerçekleştirildi.</li>
+                            <li data-lang="exp_desc_3">İstemci (Client) tarafına iletilen verilerin JSON formatında düzenlenmesi ve veri akışının optimizasyonu sağlandı.</li>
+                            <li data-lang="exp_desc_4">Geliştirilen API uç noktalarının (Endpoints) testleri yapılarak hatalar giderildi.</li>
                         </ul>
                     </li>
                 </ul>
             </section>
 
             <section id="projects" class="card fade-in">
-                <h2 class="section-title">Kişisel Projeler</h2>
+                <h2 class="section-title" data-lang="section_projects">Kişisel Projeler</h2>
                 <div class="projects-grid">
                     
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Ehliyet Koçum</h3>
-                            <span class="status-badge idle">Yakında</span>
+                            <span class="status-badge idle" data-lang="status_soon">Yakında</span>
                         </div>
-                        <p class="project-desc">Sürücü adayları için Flutter ile geliştirilen, sınav stresini azaltmayı hedefleyen interaktif simülasyon uygulaması.</p>
+                        <p class="project-desc" data-lang="proj_1_desc">Sürücü adayları için Flutter ile geliştirilen, sınav stresini azaltmayı hedefleyen interaktif simülasyon uygulaması.</p>
                         <div class="project-techs">
                             <span>Flutter</span><span>Provider/Bloc</span><span>JSON</span>
                         </div>
@@ -103,9 +105,9 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Celestia Astrology</h3>
-                            <span class="status-badge online">Geliştiriliyor</span>
+                            <span class="status-badge online" data-lang="status_dev">Geliştiriliyor</span>
                         </div>
-                        <p class="project-desc">Doğum haritası ve burç yorumları sunan, RESTful API entegrasyonlu mobil uygulama.</p>
+                        <p class="project-desc" data-lang="proj_2_desc">Doğum haritası ve burç yorumları sunan, RESTful API entegrasyonlu mobil uygulama.</p>
                         <div class="project-techs">
                             <span>Dart</span><span>REST API</span><span>Asenkron</span>
                         </div>
@@ -114,9 +116,9 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Codekeys</h3>
-                            <span class="status-badge offline">Arşivlendi</span>
+                            <span class="status-badge offline" data-lang="status_archived">Arşivlendi</span>
                         </div>
-                        <p class="project-desc">Kullanıcıların yazma hızını ölçen, Vanilla JS ile geliştirilmiş web platformu.</p>
+                        <p class="project-desc" data-lang="proj_3_desc">Kullanıcıların yazma hızını ölçen, Vanilla JS ile geliştirilmiş web platformu.</p>
                         <div class="project-techs">
                             <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
                         </div>
@@ -127,7 +129,7 @@
 
             <div class="grid-container">
                 <section id="socials" class="card fade-in">
-                    <h2 class="section-title">Sosyal Medya</h2>
+                    <h2 class="section-title" data-lang="section_social">Sosyal Medya</h2>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/yusuf-eken-b8273b2b4/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         <a href="https://github.com/Yusuf-Eken" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -138,17 +140,17 @@
                     <h2 class="section-title">GitHub Repositories</h2>
                     <table class="repo-table">
                         <tbody>
-                            <tr class="repo-placeholder-row"><td colspan="2">Repository'ler yükleniyor...</td></tr>
+                            <tr class="repo-placeholder-row"><td colspan="2" data-lang="repo_loading">Repository'ler yükleniyor...</td></tr>
                         </tbody>
                     </table>
                 </section>
             </div>
 
             <section id="technologies" class="card fade-in">
-                <h2 class="section-title">Yetenekler</h2>
+                <h2 class="section-title" data-lang="section_skills">Yetenekler</h2>
                 
                 <div class="tech-category">
-                    <h3>Diller & Framework</h3>
+                    <h3 data-lang="tech_lang">Diller & Framework</h3>
                     <div class="tech-list">
                         <div class="tech-item"><i class="devicon-flutter-plain"></i><span>Flutter</span></div>
                         <div class="tech-item"><i class="devicon-dart-plain"></i><span>Dart</span></div>
@@ -162,7 +164,7 @@
                 </div>
 
                 <div class="tech-category">
-                    <h3>Araçlar</h3>
+                    <h3 data-lang="tech_tools">Araçlar</h3>
                     <div class="tech-list">
                         <div class="tech-item"><i class="devicon-git-plain"></i><span>Git</span></div>
                         <div class="tech-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
@@ -173,24 +175,24 @@
                 </div>
 
                 <div class="tech-category">
-                    <h3>Yetkinlikler</h3>
+                    <h3 data-lang="tech_competence">Yetkinlikler</h3>
                     <div class="competency-list">
                         <span class="competency-badge">REST API</span>
                         <span class="competency-badge">OOP</span>
                         <span class="competency-badge">Clean Code</span>
-                        <span class="competency-badge">UI Tasarımı</span>
+                        <span class="competency-badge" data-lang="comp_ui">UI Tasarımı</span>
                         <span class="competency-badge">State Management</span>
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="card fade-in">
-                <h2 class="section-title">İletişim</h2>
+                <h2 class="section-title" data-lang="section_contact">İletişim</h2>
                 <div class="contact-container">
                     
                     <div class="contact-info">
-                        <h3>Birlikte Çalışalım</h3>
-                        <p>Projelerinizi hayata geçirmek veya tanışmak için formu doldurabilir ya da doğrudan e-posta gönderebilirsiniz.</p>
+                        <h3 data-lang="contact_title">Birlikte Çalışalım</h3>
+                        <p data-lang="contact_desc">Projelerinizi hayata geçirmek veya tanışmak için formu doldurabilir ya da doğrudan e-posta gönderebilirsiniz.</p>
                         
                         <div class="contact-methods">
                             <div class="method-item">
@@ -200,31 +202,31 @@
                         </div>
                     </div>
 
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Mesajınız alınmıştır (Demo).');">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo: Message sent.');">
                         <div class="form-group">
-                            <label for="name">İsim Soyisim</label>
+                            <label for="name" data-lang="form_name">İsim Soyisim</label>
                             <input type="text" id="name" placeholder="Adınız" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">E-posta</label>
+                            <label for="email" data-lang="form_email">E-posta</label>
                             <input type="email" id="email" placeholder="ornek@email.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mesajınız</label>
-                            <textarea id="message" rows="4" placeholder="Projenizden bahsedin..." required></textarea>
+                            <label for="message" data-lang="form_message">Mesajınız</label>
+                            <textarea id="message" rows="4" placeholder="..." required></textarea>
                         </div>
-                        <button type="submit" class="cta-button form-submit">Gönder <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" class="cta-button form-submit"><span data-lang="form_send">Gönder</span> <i class="fa-solid fa-paper-plane" style="margin-left:5px"></i></button>
                     </form>
 
                 </div>
             </section>
             
             <footer style="text-align: center; margin-bottom: 2rem; font-size: 0.9rem; opacity: 0.7;">
-                <p>&copy; 2026 Yusuf Eken. Tüm hakları saklıdır.</p>
+                <p>&copy; 2026 Yusuf Eken. <span data-lang="footer_rights">Tüm hakları saklıdır.</span></p>
             </footer>
         </main>
         
-        <button id="back-to-top" title="Yukarı Çık"><i class="fa-solid fa-arrow-up"></i></button>
+        <button id="back-to-top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
     </div>
     <script src="script.js"></script>
 </body>
