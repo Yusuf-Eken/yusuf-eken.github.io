@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // TEMA DEĞİŞTİRME
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const savedTheme = localStorage.getItem('theme');
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
     });
 
-    // MENÜ AÇMA/KAPAMA MANTIĞI
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
     const menuIcon = menuToggle.querySelector('i');
@@ -44,13 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // HEADER SCROLL EFEKTİ VE MENÜ GİZLEME
     const header = document.querySelector('header.card');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) { 
             header.classList.add('scrolled'); 
             
-            // Eğer scroll yapılırsa ve menü açıksa kapat
             if (navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 menuIcon.classList.remove('fa-xmark');
@@ -62,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // FADE-IN ANİMASYONU
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -73,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => { observer.observe(el); });
 
-    // BACK TO TOP
     const backToTopBtn = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
@@ -86,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // DISCORD & SPOTIFY API
     async function fetchPresenceData() {
         const discordUserId = '372423797812494336';
         
@@ -126,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchPresenceData();
     setInterval(fetchPresenceData, 10000);
     
-    // GITHUB API
     async function fetchGithubRepos() {
         const repoTableBody = document.querySelector('.repo-table tbody');
         const username = 'Yusuf-Eken';
