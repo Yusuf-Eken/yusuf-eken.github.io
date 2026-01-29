@@ -5,7 +5,7 @@ Bu proje, modern ve minimalist bir tasarıma sahip, tek sayfalık (single-page) 
 ![Projenin Ekran Görüntüsü](link/to/screenshot.png)
 <!-- Buraya sitenin bir ekran görüntüsünü koy -->
 
-➡️ **Canlı Demo:** [https://yusuf-eken.github.io/portfolio/](https://yusuf-eken.github.io)
+➡️ **Canlı Demo:** [https://yusuf-eken.github.io](https://yusuf-eken.github.io)
 <!-- Buraya sitenin canlı linkini koy -->
 
 ## ✨ Öne Çıkan Özellikler
