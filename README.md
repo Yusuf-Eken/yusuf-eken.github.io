@@ -2,7 +2,7 @@
 
 Bu proje, modern ve minimalist bir tasarıma sahip, tek sayfalık (single-page) bir developer portfolyo şablonudur. Vanilla JS kullanılarak hazırlandığı için herhangi bir derleme (build) işlemine ihtiyaç duymaz ve kolayca kişiselleştirilebilir.
 
-![Projenin Ekran Görüntüsü](link/to/screenshot.png)
+![Projenin Ekran Görüntüsü](Hakkinda_Deneyim.png)
 <!-- Buraya sitenin bir ekran görüntüsünü koy -->
 
 ➡️ **Canlı Demo:** [https://yusuf-eken.github.io](https://yusuf-eken.github.io)
