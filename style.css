@@ -3,7 +3,7 @@
     --heading-color: #111111; --text-color: #555555; --primary-color: #000000;
     --shadow-color: rgba(0, 0, 0, 0.05); --glow-button-color: rgba(0, 0, 0, 0.25); 
     --online-color: #3ba55d; --idle-color: #faa61a; --dnd-color: #ed4245; --offline-color: #747f8d;
-    --ready-color: #6366f1; /* Yeni: Hazır durumu için morumsu renk */
+    --ready-color: #6366f1;
 }
 body.dark-theme {
     --background-color: #151515; --surface-color: #1e1e1e; --border-color: #444444;
@@ -11,12 +11,10 @@ body.dark-theme {
     --shadow-color: rgba(0, 0, 0, 0.2); --glow-button-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Mevcut CSS kodlarını buraya olduğu gibi yapıştırın ve altına şunları ekleyin: */
 
 .status-badge.ready { background-color: #6366f11a; color: var(--ready-color); }
 .status-badge.ready::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background-color: var(--ready-color); margin-right: 0.5rem; }
 
-/* Proje kartı içindeki link butonu */
 .project-link-btn {
     display: inline-flex;
     align-items: center;
@@ -35,7 +33,7 @@ body.dark-theme {
 
 .project-link-btn i {
     font-size: 1rem;
-    color: #0077b5; /* LinkedIn Mavisi */
+    color: #0077b5;
 }
 
 .project-link-btn:hover {
@@ -48,8 +46,6 @@ body.dark-theme {
     border-left: 4px solid var(--primary-color);
 }
 
-/* Geri kalan tüm orijinal CSS'inizi buranın üstüne veya altına eklemeyi unutmayın */
-/* (Hepsini kopyalamadım çünkü orijinal kodunuzu korumamı istediniz, sadece eklemeleri yaptım) */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
