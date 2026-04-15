@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         tr: {
             nav_about: "Hakkımda",
-            nav_ventures: "Girişimler", // Yeni
+            nav_ventures: "Girişimler",
             nav_exp: "Deneyim",
             nav_projects: "Projeler",
             nav_skills: "Yetenekler",
             nav_contact: "İletişim",
             hero_desc: "Karmaşık problemleri, kullanıcı odaklı ve ölçeklenebilir yazılım çözümlerine dönüştürmeye odaklanıyorum. Özellikle Flutter ile mobil uygulama geliştirme konusunda tutkuluyum ve kendimi sürekli olarak yeni teknolojiler öğrenmeye adadım.",
             hero_cta: "İletişime Geç",
-            section_ventures: "Girişimler & Markalar", // Yeni
-            venture_ekendroid: "Google Play Console üzerinden mobil uygulamalarımı yayınladığım ve Android ekosistemine odaklandığım markam.", // Yeni
-            venture_dearrlink: "Gumroad üzerinden dijital varlıklar, yazılım araçları ve tasarımlar sunduğum dijital mağazam.", // Yeni
+            section_ventures: "Girişimler & Markalar",
+            venture_ekendroid: "Google Play Console üzerinden mobil uygulamalarımı yayınladığım ve Android ekosistemine odaklandığım markam.",
+            venture_dearrlink: "Gumroad üzerinden dijital varlıklar, yazılım araçları ve tasarımlar sunduğum dijital mağazam.",
             section_exp: "Deneyim",
             exp_role: "Stajyer - Node.js Web Service",
             exp_company: "Eskişehir Su ve Kanalizasyon İdaresi (ESKİ) - Genel Müdürlüğü",
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             exp_desc_4: "Geliştirilen API uç noktalarının (Endpoints) testleri yapılarak hatalar giderildi.",
             section_projects: "Kişisel Projeler",
             status_soon: "Yakında",
-            status_ready: "Yayına Hazır", // Güncellendi
+            status_ready: "Yayına Hazır",
             status_dev: "Geliştiriliyor",
             status_archived: "Arşivlendi",
             proj_1_desc: "Sürücü adayları için Flutter ile geliştirilen, sınav stresini azaltmayı hedefleyen interaktif simülasyon uygulaması.",
             proj_2_desc: "Doğum haritası ve burç yorumları sunan, RESTful API entegrasyonlu mobil uygulama.",
             proj_3_desc: "Kullanıcıların yazma hızını ölçen, Vanilla JS ile geliştirilmiş web platformu.",
-            proj_details: "Detayları İncele", // Yeni
+            proj_details: "Detayları İncele",
             section_social: "Sosyal Medya",
             repo_loading: "Repository'ler yükleniyor...",
             repo_error: "Repository'ler yüklenemedi.",
@@ -56,16 +56,16 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         en: {
             nav_about: "About",
-            nav_ventures: "Ventures", // Yeni
+            nav_ventures: "Ventures",
             nav_exp: "Experience",
             nav_projects: "Projects",
             nav_skills: "Skills",
             nav_contact: "Contact",
             hero_desc: "I focus on transforming complex problems into user-centric and scalable software solutions. I am particularly passionate about mobile application development with Flutter and dedicated to continuously learning new technologies.",
             hero_cta: "Get in Touch",
-            section_ventures: "Ventures & Brands", // Yeni
-            venture_ekendroid: "My brand where I publish my mobile applications via Google Play Console and focus on the Android ecosystem.", // Yeni
-            venture_dearrlink: "My digital store where I offer digital assets, software tools, and designs via Gumroad.", // Yeni
+            section_ventures: "Ventures & Brands",
+            venture_ekendroid: "My brand where I publish my mobile applications via Google Play Console and focus on the Android ecosystem.",
+            venture_dearrlink: "My digital store where I offer digital assets, software tools, and designs via Gumroad.",
             section_exp: "Experience",
             exp_role: "Intern - Node.js Web Service",
             exp_company: "Eskişehir Water and Sewerage Administration (ESKI) - General Directorate",
@@ -75,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
             exp_desc_4: "Tested developed API endpoints and fixed bugs.",
             section_projects: "Personal Projects",
             status_soon: "Coming Soon",
-            status_ready: "Ready to Publish", // Güncellendi
+            status_ready: "Ready to Publish",
             status_dev: "In Development",
             status_archived: "Archived",
             proj_1_desc: "Interactive simulation app developed with Flutter for driver candidates, aiming to reduce exam stress.",
             proj_2_desc: "Mobile application offering birth charts and horoscope interpretations with RESTful API integration.",
             proj_3_desc: "Web platform developed with Vanilla JS that measures users' typing speed.",
-            proj_details: "View Details", // Yeni
+            proj_details: "View Details",
             section_social: "Social Media",
             repo_loading: "Loading repositories...",
             repo_error: "Could not load repositories.",
