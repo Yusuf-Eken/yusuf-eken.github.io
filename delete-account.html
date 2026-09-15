@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap ve Veri Silme Talebi - Ehliyet Koçum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .delete-container { max-width: 800px; margin: 3rem auto; }
+        .delete-container h1 { margin-bottom: 1rem; color: var(--heading-color); }
+        .delete-container h2 { margin-top: 2rem; margin-bottom: 0.8rem; font-size: 1.3rem; color: var(--heading-color); }
+        .delete-container p, .delete-container li { line-height: 1.8; color: var(--text-color); margin-bottom: 0.8rem; }
+        .step-box { background-color: var(--background-color); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .contact-highlight { font-weight: 600; color: var(--heading-color); }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <main class="delete-container card">
+            <h1>Hesap ve Veri Silme Talebi</h1>
+            <p><strong>Ehliyet Koçum</strong> uygulamasında kullanıcı gizliliğine ve verilerin kontrolüne önem veriyoruz. Hesabınızı ve ilişkili tüm verilerinizi iki farklı yöntemle silebilirsiniz:</p>
+
+            <h2>Yöntem 1: Uygulama İçerisinden Anında Silme (Önerilen)</h2>
+            <div class="step-box">
+                <ol style="margin-left: 20px;">
+                    <li>Uygulamayı açın ve ana sayfadan sağ üstteki <strong>Ayarlar</strong> simgesine dokunun.</li>
+                    <li>Sayfanın en altında yer alan <strong>"Hesabı Kalıcı Olarak Sil"</strong> butonuna basın.</li>
+                    <li>Açılan onay penceresinde "Evet, Sil" seçeneğini seçin.</li>
+                </ol>
+                <p style="margin-top: 10px; font-size: 0.9rem;"><em>Bu işlem sonucunda Firebase Authentication profiliniz, Firestore üzerindeki sınav geçmişiniz ve cihazınızdaki yerel veritabanı anında geri döndürülemez şekilde silinir.</em></p>
+            </div>
+
+            <h2>Yöntem 2: E-Posta ile Silme Talebi</h2>
+            <p>Uygulamayı sildiyseniz veya hesabınıza erişemiyorsanız, hesabınızın bağlı olduğu e-posta adresinden şu adrese talep iletebilirsiniz:</p>
+            <p><span class="contact-highlight">E-posta:</span> yusuffeken@gmail.com</p>
+            <p><span class="contact-highlight">Konu:</span> Ehliyet Koçum Hesap Silme Talebi</p>
+            <p>Talebiniz bize ulaştıktan sonra 48 saat içerisinde hesabınız ve sunucularımızda bulunan tüm geçmiş verileriniz kalıcı olarak temizlenecektir.</p>
+
+            <h2>Hangi Veriler Silinir?</h2>
+            <ul>
+                <li>Google/Firebase kullanıcı kimliği ve oturum bilgileri</li>
+                <li>Tüm deneme sınavı sonuçları ve istatistikleri</li>
+                <li>Liderlik tablosu sıralama kayıtları</li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
